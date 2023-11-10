@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#b5e9ff"
+        tools:context=".MainActivity"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <EditText
+            android:id="@+id/idname"
+            android:layout_width="173dp"
+            android:visibility="visible"
+            android:layout_height="43dp"
+            android:layout_marginTop="88dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="  Barcode"
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.108"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/idcontact"
+            android:layout_width="173dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="33dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:visibility="visible"
+            android:hint="  sssΠοσότητα"
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.108"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/idname"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/iddate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Ποσότητα"
+            android:inputType="textPersonName"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.186"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/idinsert"
+            android:layout_width="120dp"
+            android:layout_height="58dp"
+            android:backgroundTint="#2df151"
+            android:text="ΕΙΣΑΓΩΓΗ"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.005"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.728" />
+
+        <Button
+            android:id="@+id/iddelete"
+            android:layout_width="121dp"
+            android:layout_height="56dp"
+            android:backgroundTint="#e61313"
+            android:text="ΔΙΑΓΡΑΦΗ"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/idinsert"
+            app:layout_constraintVertical_bias="0.386" />
+
+        <Button
+            android:id="@+id/idupdate"
+            android:layout_width="118dp"
+            android:layout_height="62dp"
+            android:backgroundTint="#ffc927"
+            android:text="ΑΝΑΝΕΩΣΗ"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.736" />
+
+        <Button
+            android:id="@+id/idview"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:backgroundTint="#0f52ec"
+            android:text="ΠΡΟΒΟΛΗ ΟΛΩΝ"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/idupdate"
+            app:layout_constraintVertical_bias="0.616" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="203dp"
+            android:layout_height="58dp"
+            android:layout_marginBottom="21dp"
+            android:visibility="invisible"
+            android:text="ΛΕΠΤΟΜΕΡΕΙΕΣ ΚΑΤΑΧΩΡΗΣΗΣ"
+            android:textColor="@color/black"
+            android:textSize="24dp"
+            app:layout_constraintBottom_toTopOf="@+id/idname"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.136"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="292dp"
+            android:layout_marginBottom="100dp"
+            android:text="Button"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

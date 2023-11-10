@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "265165457458",
+    "project_id": "wsproject-361bb",
+    "storage_bucket": "wsproject-361bb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:265165457458:android:e0fb0c13b1769a9bb6142b",
+        "android_client_info": {
+          "package_name": "com.company.ws"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAz2FfzXoZVYGZN9JQQw3sv-t3lnQa9dRM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

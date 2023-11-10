@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d2ecf7"
+    tools:context=".Email_Ac">
+
+    <TextView
+        android:id="@+id/idtext"
+        android:layout_width="141dp"
+        android:layout_height="41dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.989" />
+
+    <Button
+        android:id="@+id/b1b1"
+        android:layout_width="196dp"
+        android:layout_height="86dp"
+        android:text="ΤΕΛΙΚΗ ΑΠΟΘΗΚΕΥΣΗ"
+
+
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.675" />
+
+    <Button
+        android:id="@+id/deleteb"
+        android:layout_width="131dp"
+        android:layout_height="62dp"
+        android:backgroundTint="@color/black"
+        android:text="ΔΙΑΓΡΑΦΗ ΟΛΩΝ"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.846" />
+
+    <Button
+        android:id="@+id/deletefinal"
+        android:layout_width="131dp"
+        android:layout_height="62dp"
+        android:backgroundTint="#FF0000"
+        android:clickable="false"
+        android:text="ΔΙΑΓΡΑΦΗ ΟΛΩΝ"
+        android:textColor="@color/white"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.467"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.662" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="241dp"
+        android:layout_height="213dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="250dp"
+        android:background="@drawable/filefile"
+        android:fillViewport="true"
+        android:outlineAmbientShadowColor="@color/black"
+        android:paddingLeft="40sp"
+        android:paddingTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.024"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.074">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/t"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/scrollView2" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <EditText
+        android:id="@+id/edei"
+        android:layout_width="209dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="208dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="Γραψε κωδικό"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/deletefinal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.123" />
+
+    <TextView
+        android:id="@+id/warning"
+        android:layout_width="138dp"
+        android:layout_height="52dp"
+        android:background="@color/black"
+        android:text="**ΠΡΟΣΟΧΗ! ΑΠΟΠΕΙΡΑ ΔΙΑΓΡΑΦΗΣ ΒΑΣΗΣ"
+        android:textColor="#FF0000"
+        android:textSize="10sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.941"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.053" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

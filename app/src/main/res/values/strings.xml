@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">WS</string>
+
+
+    <string-array name="number">
+        <item>Zebra-scanner-1</item>
+        <item>Zebra-scanner-2</item>
+
+    </string-array>
+
+</resources>
